@@ -7,7 +7,7 @@
 
 [node name="@Squircle@4" type="KinematicBody2D"]
 modulate = Color( 0.758458, 0.0677207, 0.385997, 1 )
-position = Vector2( -184.825, -486.669 )
+position = Vector2( -376.497, -800.035 )
 z_index = 1
 script = ExtResource( 1 )
 
