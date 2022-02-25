@@ -6,8 +6,8 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [node name="@Squircle@3" type="KinematicBody2D"]
-modulate = Color( 0.26002, 0.397005, 0.0155653, 1 )
-position = Vector2( 31.6683, 6.66665 )
+modulate = Color( 0.532449, 0.335747, 0.157277, 1 )
+position = Vector2( 28.1592, 160 )
 z_index = 1
 script = ExtResource( 1 )
 
