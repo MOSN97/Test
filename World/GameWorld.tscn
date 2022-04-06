@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Scripts/GameWorld.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Enemy.gd" type="Script" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://PermanentNPCs/Shopkeeper.tres" type="Resource" id=17]
 [ext_resource path="res://PermanentNPCs/Healer.tres" type="Resource" id=18]
 [ext_resource path="res://Misc/Font30.tres" type="DynamicFont" id=19]
+[ext_resource path="res://Scripts/Oneshots/PressurePlate.gd" type="Script" id=20]
 [ext_resource path="res://Sprites/SquircleSprites/SquircleFaceNeutral.png" type="Texture" id=21]
 [ext_resource path="res://Sprites/SquircleSprites/SquircleBody.png" type="Texture" id=22]
 [ext_resource path="res://Sprites/Enemies/SpookyPumpkin.png" type="Texture" id=24]
@@ -51,8 +52,14 @@ extents = Vector2( 700, 650 )
 
 [node name="GameWorld" type="Node2D"]
 script = ExtResource( 1 )
+factions = [ "Armed Rats", "Spooks", "Flightless Birds", "Geology Gang" ]
+faction_power = [ 40, 40, 40, 40 ]
+faction_aggression = [ 75, 75, 75, 75 ]
+faction_creeps = [ [  ], [  ], [  ], [  ] ]
 faction_creep_types = [ [ ExtResource( 15 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 7 ), ExtResource( 5 ) ], [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 6 ) ], [  ], [  ] ]
 faction_boss = [ NodePath("Enemies/RatWithNuke"), NodePath("Enemies/PumpkinKing"), null, null ]
+faction_peace = [ 0, 0, 0, 0 ]
+faction_defeat = [ false, false, false, false ]
 
 [node name="DefaultNPCs" type="Node2D" parent="."]
 
@@ -106,7 +113,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = ExtResource( 19 )
-text = "Mcsquircle"
+text = "Mayor Squirlington"
 align = 1
 valign = 1
 autowrap = true
@@ -258,7 +265,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = ExtResource( 19 )
-text = "Mcsquircle"
+text = "Doctor P.H.D."
 align = 1
 valign = 1
 autowrap = true
@@ -334,7 +341,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = ExtResource( 19 )
-text = "Mcsquircle"
+text = "Sensei Dalaballa"
 align = 1
 valign = 1
 autowrap = true
@@ -373,6 +380,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+aggressive = true
 type = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="Enemies/RatWithNuke"]
@@ -458,6 +466,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+aggressive = true
 type = ExtResource( 6 )
 
 [node name="Sprite" type="Sprite" parent="Enemies/PumpkinKing"]
@@ -539,62 +548,67 @@ shape = SubResource( 4 )
 [node name="Graveyard" type="Node2D" parent="WorldObejcts"]
 position = Vector2( 560, -80 )
 
-[node name="Grave1" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave1" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -80, 32 )
 
-[node name="Grave2" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave2" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -48, 32 )
 
-[node name="Grave3" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave3" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -16, 32 )
 
-[node name="Grave4" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave4" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 32, 32 )
 
-[node name="Grave5" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave5" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 64, 32 )
 
-[node name="Grave6" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave6" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 96, 32 )
 
-[node name="Grave7" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave7" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -80, -32 )
 
-[node name="Grave8" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave8" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -48, -32 )
 
-[node name="Grave9" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave9" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -16, -32 )
 
-[node name="Grave10" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave10" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 32, -32 )
 
-[node name="Grave11" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave11" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 64, -32 )
 
-[node name="Grave12" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave12" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 96, -32 )
 
-[node name="Grave13" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave13" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -80, -96 )
 
-[node name="Grave14" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave14" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -48, -96 )
 
-[node name="Grave15" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave15" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( -16, -96 )
 
-[node name="Grave16" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave16" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 32, -96 )
 
-[node name="Grave17" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave17" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 64, -96 )
 
-[node name="Grave18" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
+[node name="Grave18" type="StaticBody2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 4 )]
 position = Vector2( 96, -96 )
 
-[node name="PressurePlate" parent="WorldObejcts/Graveyard" instance=ExtResource( 3 )]
+[node name="PressurePlate" type="Area2D" parent="WorldObejcts/Graveyard" instance=ExtResource( 3 )]
 position = Vector2( 8, -160 )
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource( 20 )
+type = "REVIVE"
 
 [node name="Points" type="Node2D" parent="."]
 
@@ -639,3 +653,4 @@ shape = SubResource( 101 )
 [connection signal="pressed" from="DefaultNPCs/Sensei/Button" to="DefaultNPCs/Sensei" method="interact"]
 [connection signal="pressed" from="Enemies/RatWithNuke/Button" to="Enemies/RatWithNuke" method="interact"]
 [connection signal="pressed" from="Enemies/PumpkinKing/Button" to="Enemies/PumpkinKing" method="interact"]
+[connection signal="body_entered" from="WorldObejcts/Graveyard/PressurePlate" to="WorldObejcts/Graveyard/PressurePlate" method="player_entered"]
