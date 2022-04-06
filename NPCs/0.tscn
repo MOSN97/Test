@@ -16,7 +16,7 @@ radius = 4.0
 
 [node name="Squircle" type="KinematicBody2D"]
 pause_mode = 1
-position = Vector2( -225.424, -70.0877 )
+position = Vector2( -212.924, -68.0705 )
 z_index = 1
 collision_layer = 9
 script = ExtResource( 1 )
@@ -46,9 +46,8 @@ scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 22 )
 
 [node name="FaceSprite" type="Sprite" parent="."]
-visible = false
 modulate = Color( 0.808901, 0.182859, 0.137191, 1 )
-position = Vector2( 0, -0.5 )
+position = Vector2( 1, 0 )
 scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 21 )
 
