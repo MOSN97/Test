@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Misc/Font45.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scripts/Chronicle.gd" type="Script" id=2]
 [ext_resource path="res://Sprites/UI/Cross.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/UI/ChroniclePanel.tscn" type="PackedScene" id=4]
 
 [node name="Chronicle" type="Panel"]
 margin_left = -300.0
@@ -30,21 +29,6 @@ margin_right = 588.0
 margin_bottom = 550.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="Panel" type="PanelContainer" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 4 )]
-margin_right = 588.0
-margin_bottom = 37.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="@Panel@132" type="PanelContainer" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 4 )]
-margin_top = 41.0
-margin_right = 588.0
-margin_bottom = 101.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
