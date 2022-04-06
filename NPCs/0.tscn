@@ -12,13 +12,13 @@
 radius = 6.5
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 45.0
+radius = 4.0
 
 [node name="Squircle" type="KinematicBody2D"]
 pause_mode = 1
-position = Vector2( 51.2622, 63.0907 )
+position = Vector2( 59.6005, 51.4093 )
 z_index = 1
-collision_layer = 11
+collision_layer = 9
 script = ExtResource( 1 )
 character_name = "awfwaffa"
 alive = true
@@ -47,7 +47,7 @@ texture = ExtResource( 22 )
 
 [node name="FaceSprite" type="Sprite" parent="."]
 modulate = Color( 0.808901, 0.182859, 0.137191, 1 )
-position = Vector2( 0, 0.5 )
+position = Vector2( -1, 0 )
 scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 21 )
 
