@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Scripts/GameWorld.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Enemy.gd" type="Script" id=2]
@@ -30,9 +30,6 @@
 [ext_resource path="res://Scripts/PermanentNPC.gd" type="Script" id=28]
 [ext_resource path="res://Scripts/Oneshots/Glow.gd" type="Script" id=29]
 [ext_resource path="res://Scenes/GameObjects/Signpost.tscn" type="PackedScene" id=30]
-[ext_resource path="res://Scenes/GameObjects/TreasureChest.tscn" type="PackedScene" id=31]
-[ext_resource path="res://Items/Consumables/Cookie.tres" type="Resource" id=32]
-[ext_resource path="res://Scripts/Oneshots/TreasureChest.gd" type="Script" id=33]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 6.5
@@ -651,13 +648,6 @@ monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Regions/ForestArea"]
 shape = SubResource( 101 )
-
-[node name="TreasureChest" type="KinematicBody2D" parent="." instance=ExtResource( 31 )]
-position = Vector2( -114.465, 64.3338 )
-collision_layer = 9
-script = ExtResource( 33 )
-contents = [ ExtResource( 32 ) ]
-contents_count = [ 3 ]
 
 [node name="Signpost" type="KinematicBody2D" parent="." instance=ExtResource( 30 )]
 position = Vector2( -18.1331, 97.3321 )
