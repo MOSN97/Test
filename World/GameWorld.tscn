@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Scripts/GameWorld.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Enemy.gd" type="Script" id=2]
@@ -22,12 +22,17 @@
 [ext_resource path="res://Scripts/Oneshots/PressurePlate.gd" type="Script" id=20]
 [ext_resource path="res://Sprites/SquircleSprites/SquircleFaceNeutral.png" type="Texture" id=21]
 [ext_resource path="res://Sprites/SquircleSprites/SquircleBody.png" type="Texture" id=22]
+[ext_resource path="res://Scripts/Oneshots/Signpost.gd" type="Script" id=23]
 [ext_resource path="res://Sprites/Enemies/SpookyPumpkin.png" type="Texture" id=24]
 [ext_resource path="res://Sprites/SquircleSprites/Shadow.png" type="Texture" id=25]
 [ext_resource path="res://Sprites/UI/LightCircle.png" type="Texture" id=26]
 [ext_resource path="res://Sprites/Enemies/RatWithNuke.png" type="Texture" id=27]
 [ext_resource path="res://Scripts/PermanentNPC.gd" type="Script" id=28]
 [ext_resource path="res://Scripts/Oneshots/Glow.gd" type="Script" id=29]
+[ext_resource path="res://Scenes/GameObjects/Signpost.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Scenes/GameObjects/TreasureChest.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Items/Consumables/Cookie.tres" type="Resource" id=32]
+[ext_resource path="res://Scripts/Oneshots/TreasureChest.gd" type="Script" id=33]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 6.5
@@ -646,6 +651,21 @@ monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Regions/ForestArea"]
 shape = SubResource( 101 )
+
+[node name="TreasureChest" type="KinematicBody2D" parent="." instance=ExtResource( 31 )]
+position = Vector2( -114.465, 64.3338 )
+collision_layer = 9
+script = ExtResource( 33 )
+contents = [ ExtResource( 32 ) ]
+contents_count = [ 3 ]
+
+[node name="Signpost" type="KinematicBody2D" parent="." instance=ExtResource( 30 )]
+position = Vector2( -18.1331, 97.3321 )
+collision_layer = 9
+script = ExtResource( 23 )
+text = "1 MB aint enough"
+creator = "awfwaf"
+creator_color = Color( 0.653831, 0.849225, 0.272585, 1 )
 
 [connection signal="pressed" from="DefaultNPCs/Mayor/Button" to="DefaultNPCs/Mayor" method="interact"]
 [connection signal="pressed" from="DefaultNPCs/Shopkeeper/Button" to="DefaultNPCs/Shopkeeper" method="interact"]
