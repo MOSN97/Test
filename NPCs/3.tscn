@@ -14,13 +14,13 @@
 radius = 6.5
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 45.0
+radius = 4.0
 
-[node name="Squircle" type="KinematicBody2D"]
+[node name="@Squircle@129" type="KinematicBody2D"]
 pause_mode = 1
-position = Vector2( 127.15, -12.3941 )
+position = Vector2( 163.816, -52.3941 )
 z_index = 1
-collision_layer = 11
+collision_layer = 9
 script = ExtResource( 1 )
 character_name = "GREEN GOOOBLIN"
 alive = true
@@ -49,7 +49,7 @@ texture = ExtResource( 22 )
 
 [node name="FaceSprite" type="Sprite" parent="."]
 modulate = Color( 0.568417, 0.932175, 0.294033, 1 )
-position = Vector2( 0, 0.5 )
+position = Vector2( 1, 0 )
 scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 21 )
 
