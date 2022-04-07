@@ -16,13 +16,13 @@
 radius = 6.5
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 30.0
+radius = 4.0
 
-[node name="Squircle" type="KinematicBody2D"]
+[node name="@Squircle@132" type="KinematicBody2D"]
 pause_mode = 1
-position = Vector2( 3.71482, -35.4661 )
+position = Vector2( 1902.58, 1855.4 )
 z_index = 1
-collision_layer = 11
+collision_layer = 9
 script = ExtResource( 1 )
 character_name = "Sir fancy"
 alive = true
@@ -50,7 +50,7 @@ scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 5 )
 
 [node name="FaceSprite" type="Sprite" parent="."]
-position = Vector2( -1, -0.5 )
+position = Vector2( 0, 0.5 )
 scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 6 )
 
