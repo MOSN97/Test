@@ -1,4 +1,5 @@
 # Squircletopia!
+![Squircletopia](https://user-images.githubusercontent.com/36171811/162187206-6ab09a55-e9e2-4c32-901a-333d802a63f2.png)
 
 Play the game here: https://mosn97.github.io/Test/
 
