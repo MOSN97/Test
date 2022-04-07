@@ -11,3 +11,4 @@ After you are finished playing and have saved, please fill out this survey here:
 - Squircletopia is a topdown RPG with turn-based combat where the village of Squircles must settle their differences with four hostile factions. Or destory them. Whatever works.
 - Controls: WASD or Arrow Keys to move; Shift to sprint. Click with the mouse or use Spacebar or Enter to interact with nearby objects.
 - The game is a work in progress and is missing several planned features: For example the ability shop, being able to use items or flee in battles and the "Instructions" in the main menu.
+- This game uses several free-to-use assets. A credit list will be added in the future.
