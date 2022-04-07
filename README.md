@@ -2,7 +2,7 @@
 
 Play the game here: https://mosn97.github.io/Test/
 
-**NOTE: When you want to stop playing make sure to open up the pause menu and click "Save and Quit". This will save your character as an NPC and the state of the game world. Do not quit before the text changes from "Saving" to "Successful!"** (Unless it takes like a minute or something in which case the save was not successful)
+**NOTE: When you want to stop playing make sure to open up the pause menu and click "Save and Quit". This will save your character as an NPC and the state of the game world. Do not quit before the text changes from "Saving" to "Successful!" (Unless it takes more than a minute in which case the save was probably not successful)**
 
 After you are finished playing and have saved, please fill out this survey here: https://forms.gle/1pXurBbN1f1csD3x5
 
