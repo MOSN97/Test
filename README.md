@@ -1,4 +1,4 @@
-# Squircletopia!
+# Squircletopia! (Thesis Game)
 
 Play the game here: https://mosn97.github.io/Test/
 
