@@ -1,0 +1,133 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Items/Consumables/Signpost.tres" type="Resource" id=2]
+[ext_resource path="res://Misc/Font30.tres" type="DynamicFont" id=19]
+[ext_resource path="res://Sprites/SquircleSprites/SquircleFaceNeutral.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/SquircleSprites/SquircleBody.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/SquircleSprites/Shadow.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/UI/LightCircle.png" type="Texture" id=26]
+[ext_resource path="res://Scripts/Oneshots/Glow.gd" type="Script" id=29]
+[ext_resource path="res://Items/Consumables/Cookie.tres" type="Resource" id=32]
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 6.5
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 45.0
+
+[node name="Squircle" type="KinematicBody2D"]
+pause_mode = 1
+position = Vector2( 101.659, -143.713 )
+z_index = 1
+collision_layer = 11
+script = ExtResource( 1 )
+character_name = "TESSST BOOI"
+alive = true
+guts = 3
+wisdom = 3
+charm = 3
+max_health = 10
+health = 10
+level = 1
+xp = 0
+morality = 0
+inclination = [ 0, 0, 0 ]
+abilities = [ "ATTACK" ]
+spells = [ "FIREBALL" ]
+topics = [ "SMALL TALK", "JOKE" ]
+inventory = [ ExtResource( 2 ), ExtResource( 32 ) ]
+inventory_count = [ 1, 3 ]
+chips = 0
+hat = null
+weapon = null
+
+[node name="BodySprite" type="Sprite" parent="."]
+modulate = Color( 0.694933, 0.711805, 0.132793, 1 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 22 )
+
+[node name="FaceSprite" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.349254, 0.984645, 0.203053, 1 )
+position = Vector2( 0, -0.5 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 21 )
+
+[node name="HatSprite" type="Sprite" parent="."]
+scale = Vector2( 0.15, 0.15 )
+flip_h = true
+
+[node name="Shadow" type="Sprite" parent="."]
+position = Vector2( 0, 6 )
+scale = Vector2( 0.125, 0.125 )
+z_index = -1
+texture = ExtResource( 25 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+margin_top = -10.0
+margin_right = 40.0
+margin_bottom = 30.0
+rect_scale = Vector2( 0.15, 0.15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NameTag" type="Label" parent="Control"]
+margin_left = -320.0
+margin_top = -80.0
+margin_right = 320.0
+margin_bottom = 80.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = ExtResource( 19 )
+text = "TESSST BOOI"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -6.25
+margin_top = -6.25
+margin_right = 18.75
+margin_bottom = 18.75
+rect_scale = Vector2( 0.5, 0.5 )
+focus_mode = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Glow" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+scale = Vector2( 0.3, 0.3 )
+z_index = -1
+texture = ExtResource( 26 )
+script = ExtResource( 29 )
+
+[node name="EnemyScanner" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyScanner"]
+visible = false
+shape = SubResource( 4 )
+
+[node name="InteractibleScanner" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractibleScanner"]
+shape = SubResource( 4 )
+
+[connection signal="pressed" from="Button" to="." method="interact"]
