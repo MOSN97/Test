@@ -13,7 +13,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-entries = [ "[color=#34d42c]MOSN[/color] has moved into Squircletown!", "[color=#323796]Sir fancy[/color] has moved into Squircletown!", "[color=#a65607]Squiggly Squircle[/color] has moved into Squircletown!" ]
+entries = [ "[color=#34d42c]MOSN[/color] has moved into Squircletown!", "[color=#323796]Sir fancy[/color] has moved into Squircletown!", "[color=#a65607]Squiggly Squircle[/color] has moved into Squircletown!", "[color=#fe00ff]Bongoballademager[/color] has moved into Squircletown!" ]
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 anchor_right = 1.0
