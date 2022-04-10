@@ -56,7 +56,7 @@ extents = Vector2( 700, 650 )
 [node name="GameWorld" type="Node2D"]
 script = ExtResource( 1 )
 factions = [ "Armed Rats", "Spooks", "Flightless Birds", "Geology Gang" ]
-faction_power = [ 87.5, 46.5, 40, 40 ]
+faction_power = [ 97.5, 56.5, 40, 40 ]
 faction_aggression = [ 24.75, 99.0, 75, 75 ]
 faction_creeps = [ [ Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 990.47, -1223.03 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 3 ),"move_speed":50,"horizontal":0,"vertical":0,"position_check_counter":0)
 , Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 1953.42, -1642.02 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 3 ),"move_speed":50,"horizontal":0,"vertical":-1,"position_check_counter":0)
@@ -102,6 +102,11 @@ faction_creeps = [ [ Object(KinematicBody2D,"_import_path":NodePath(""),"pause_m
 , Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 1774.58, -966.075 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":13,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":false,"type":ExtResource( 5 ),"move_speed":50,"horizontal":0,"vertical":-1,"position_check_counter":0)
 , Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 1072.59, -1435.9 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":13,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":false,"type":ExtResource( 4 ),"move_speed":50,"horizontal":0,"vertical":0,"position_check_counter":0)
 , Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 1389.27, -829.513 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 3 ),"move_speed":50,"horizontal":0,"vertical":0,"position_check_counter":0)
+, Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 1753.64, -1289.42 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 4 ),"move_speed":50,"horizontal":1,"vertical":0,"position_check_counter":0)
+, Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 1274.87, -860.574 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 4 ),"move_speed":50,"horizontal":-1,"vertical":0,"position_check_counter":0)
+, Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 778.909, -1277.76 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 4 ),"move_speed":50,"horizontal":0,"vertical":1,"position_check_counter":0)
+, Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 853.602, -1205.93 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 4 ),"move_speed":50,"horizontal":0,"vertical":1,"position_check_counter":0)
+, Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 324.116, -590.643 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 3 ),"move_speed":50,"horizontal":-1,"vertical":0,"position_check_counter":0)
  ], [ Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 712.663, 1944.11 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 7 ),"move_speed":50,"horizontal":0,"vertical":0,"position_check_counter":0)
 , Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( 1647.88, 1954.56 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 7 ),"move_speed":50,"horizontal":0,"vertical":0,"position_check_counter":0)
 , Object(KinematicBody2D,"_import_path":NodePath(""),"pause_mode":1,"process_priority":0,"visible":true,"modulate":Color( 1, 1, 1, 1 ),"self_modulate":Color( 1, 1, 1, 1 ),"show_behind_parent":false,"light_mask":1,"material":null,"use_parent_material":false,"position":Vector2( -145.775, 364.704 ),"rotation":0.0,"scale":Vector2( 1, 1 ),"z_index":1,"z_as_relative":true,"collision_layer":5,"collision_mask":1,"input_pickable":false,"collision/safe_margin":0.08,"motion/sync_to_physics":false,"script":ExtResource( 23 ),"id":-1,"busy":false,"role":"Enemy","aggressive":true,"type":ExtResource( 8 ),"move_speed":50,"horizontal":1,"vertical":0,"position_check_counter":0)
@@ -636,7 +641,7 @@ shape = SubResource( 4 )
 
 [node name="@Enemy@131" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 622.576, -1192.3 )
+position = Vector2( 689.424, -1134.24 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -645,7 +650,7 @@ type = ExtResource( 5 )
 
 [node name="@Enemy@133" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 950.356, -1512.69 )
+position = Vector2( 953.644, -1512.69 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -663,7 +668,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@138" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1865.64, -1640.09 )
+position = Vector2( 1862.36, -1640.09 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -672,7 +677,7 @@ type = ExtResource( 5 )
 
 [node name="@Enemy@140" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 305.259, -664.857 )
+position = Vector2( 257.703, -561.526 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -681,7 +686,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@145" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 118.007, -1158.34 )
+position = Vector2( -27.0663, -1289.42 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -690,7 +695,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@146" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1910.36, -1385.42 )
+position = Vector2( 1913.64, -1385.42 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -699,7 +704,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@148" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1770.91, -1926.59 )
+position = Vector2( 1722.84, -1885.74 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -708,7 +713,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@156" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( -364.239, 1617.7 )
+position = Vector2( -289.495, 1694.58 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -726,7 +731,7 @@ type = ExtResource( 7 )
 
 [node name="@Enemy@165" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1614.58, 389.743 )
+position = Vector2( 1704.92, 374.23 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -744,7 +749,7 @@ type = ExtResource( 7 )
 
 [node name="@Enemy@174" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( -232.921, 593.591 )
+position = Vector2( -94.4239, 725.271 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -753,7 +758,7 @@ type = ExtResource( 8 )
 
 [node name="@Enemy@177" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 840.592, 845.575 )
+position = Vector2( 721.744, 822.505 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -762,7 +767,7 @@ type = ExtResource( 9 )
 
 [node name="@Enemy@211" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( -289.424, 1694.5 )
+position = Vector2( -237.591, 1828.25 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -771,7 +776,7 @@ type = ExtResource( 7 )
 
 [node name="@Enemy@224" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1655.1, -1734.58 )
+position = Vector2( 1694.27, -1741.24 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -780,7 +785,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@227" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 153.644, -1526.58 )
+position = Vector2( 150.356, -1526.58 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -789,7 +794,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@228" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1110.36, -1272.06 )
+position = Vector2( 1113.64, -1272.06 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -798,7 +803,7 @@ type = ExtResource( 2 )
 
 [node name="@Enemy@132" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1785.64, -1638.58 )
+position = Vector2( 1782.36, -1638.58 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -807,7 +812,7 @@ type = ExtResource( 2 )
 
 [node name="@Enemy@134" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 996.605, 864.239 )
+position = Vector2( 1150.26, 1007.57 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -816,7 +821,7 @@ type = ExtResource( 9 )
 
 [node name="Enemy" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 664.292, -1355.26 )
+position = Vector2( 809.479, -1212.9 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -825,7 +830,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@130" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 81.5613, -614.9 )
+position = Vector2( 194.276, -651.077 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -843,7 +848,7 @@ type = ExtResource( 5 )
 
 [node name="@Enemy@133" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 609.424, 67.0208 )
+position = Vector2( 792.423, -38.576 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -852,7 +857,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@153" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1758.5, -1824.08 )
+position = Vector2( 1777.42, -1993.5 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -861,7 +866,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@154" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 117.413, -1145.27 )
+position = Vector2( 245.257, -1286.93 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -870,7 +875,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@156" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 861.919, -953.424 )
+position = Vector2( 692.768, -904.066 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -879,7 +884,7 @@ type = ExtResource( 5 )
 
 [node name="@Enemy@162" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1498.91, -472.439 )
+position = Vector2( 1600.58, -444.4 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -888,7 +893,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@163" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 47.2742, 308.566 )
+position = Vector2( -72.7426, 410.258 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -897,7 +902,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@164" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1334.36, -1080.14 )
+position = Vector2( 1337.64, -1080.14 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
@@ -906,7 +911,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@165" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 751.423, -1502.58 )
+position = Vector2( 778.089, -1560.85 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -915,7 +920,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@166" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 858.89, -1163.4 )
+position = Vector2( 978.241, -1189.25 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -924,7 +929,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@175" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 478.378, 692.553 )
+position = Vector2( 473.284, 616.953 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -933,7 +938,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@176" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1971.57, -1276.93 )
+position = Vector2( 2001.5, -1175.47 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -942,7 +947,7 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@182" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1269.43, -1158.58 )
+position = Vector2( 1338.09, -1171.91 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -951,7 +956,7 @@ type = ExtResource( 3 )
 
 [node name="@Enemy@193" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1774.58, -966.075 )
+position = Vector2( 1952.92, -980.09 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -960,7 +965,7 @@ type = ExtResource( 5 )
 
 [node name="@Enemy@196" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1072.59, -1435.9 )
+position = Vector2( 990.504, -1474.09 )
 z_index = 1
 collision_layer = 13
 script = ExtResource( 23 )
@@ -969,7 +974,52 @@ type = ExtResource( 4 )
 
 [node name="@Enemy@241" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
 pause_mode = 1
-position = Vector2( 1389.27, -829.513 )
+position = Vector2( 1437.16, -800.567 )
+z_index = 1
+collision_layer = 5
+script = ExtResource( 23 )
+aggressive = true
+type = ExtResource( 3 )
+
+[node name="@Enemy@129" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
+pause_mode = 1
+position = Vector2( 1753.64, -1289.42 )
+z_index = 1
+collision_layer = 5
+script = ExtResource( 23 )
+aggressive = true
+type = ExtResource( 4 )
+
+[node name="@Enemy@130" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
+pause_mode = 1
+position = Vector2( 1274.87, -860.574 )
+z_index = 1
+collision_layer = 5
+script = ExtResource( 23 )
+aggressive = true
+type = ExtResource( 4 )
+
+[node name="@Enemy@131" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
+pause_mode = 1
+position = Vector2( 778.909, -1277.76 )
+z_index = 1
+collision_layer = 5
+script = ExtResource( 23 )
+aggressive = true
+type = ExtResource( 4 )
+
+[node name="@Enemy@132" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
+pause_mode = 1
+position = Vector2( 853.602, -1205.93 )
+z_index = 1
+collision_layer = 5
+script = ExtResource( 23 )
+aggressive = true
+type = ExtResource( 4 )
+
+[node name="@Enemy@133" type="KinematicBody2D" parent="Enemies" instance=ExtResource( 26 )]
+pause_mode = 1
+position = Vector2( 324.116, -590.643 )
 z_index = 1
 collision_layer = 5
 script = ExtResource( 23 )
