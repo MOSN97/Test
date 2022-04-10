@@ -16,9 +16,9 @@ radius = 6.5
 [sub_resource type="CircleShape2D" id=4]
 radius = 4.0
 
-[node name="@Squircle@139" type="KinematicBody2D"]
+[node name="@@Squircle@139@144" type="KinematicBody2D"]
 pause_mode = 1
-position = Vector2( 48.758, 120.571 )
+position = Vector2( 1621.16, -1772.7 )
 z_index = 1
 collision_layer = 9
 script = ExtResource( 1 )
@@ -28,11 +28,11 @@ guts = 3
 wisdom = 3
 charm = 3
 max_health = 10
-health = 10
+health = 10.0
 level = 1
-xp = 0
+xp = 6.0
 morality = 0
-inclination = [ 0, 0, 0 ]
+inclination = [ 1, 1, 1 ]
 abilities = [ "ATTACK" ]
 spells = [ "FIREBALL" ]
 topics = [ "SMALL TALK", "JOKE" ]
@@ -55,6 +55,7 @@ texture = ExtResource( 5 )
 
 [node name="HatSprite" type="Sprite" parent="."]
 scale = Vector2( 0.15, 0.15 )
+flip_h = true
 
 [node name="Shadow" type="Sprite" parent="."]
 position = Vector2( 0, 6 )
@@ -105,7 +106,7 @@ __meta__ = {
 }
 
 [node name="Glow" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color( 1, 1, 1, 0.5 )
 scale = Vector2( 0.3, 0.3 )
 z_index = -1
 texture = ExtResource( 8 )
