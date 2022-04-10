@@ -20,21 +20,21 @@ radius = 4.0
 
 [node name="@Squircle@132" type="KinematicBody2D"]
 pause_mode = 1
-position = Vector2( 1902.58, 1855.4 )
+position = Vector2( 1293.94, -1223.26 )
 z_index = 1
 collision_layer = 9
 script = ExtResource( 1 )
 character_name = "Sir fancy"
 alive = true
-guts = 10
+guts = 11
 wisdom = 3
 charm = 3
-max_health = 20
-health = 20.0
-level = 6
-xp = 55.0
+max_health = 22
+health = 22.0
+level = 7
+xp = 67.0
 morality = 0
-inclination = [ 3, 0, 0 ]
+inclination = [ 2, 1, 0 ]
 abilities = [ "ATTACK" ]
 spells = [ "FIREBALL" ]
 topics = [ "SMALL TALK", "JOKE" ]
@@ -50,7 +50,7 @@ scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 5 )
 
 [node name="FaceSprite" type="Sprite" parent="."]
-position = Vector2( 0, 0.5 )
+position = Vector2( -1, 0 )
 scale = Vector2( 0.125, 0.125 )
 texture = ExtResource( 6 )
 
