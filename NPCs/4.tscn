@@ -14,13 +14,13 @@
 radius = 6.5
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 30.0
+radius = 4.0
 
-[node name="Squircle" type="KinematicBody2D"]
+[node name="@Squircle@139" type="KinematicBody2D"]
 pause_mode = 1
-position = Vector2( 1.95262, 2.74102 )
+position = Vector2( 48.758, 120.571 )
 z_index = 1
-collision_layer = 11
+collision_layer = 9
 script = ExtResource( 1 )
 character_name = "Surogskuffet"
 alive = true
